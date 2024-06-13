@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import First from './First';
 import Second from './Second';
 import { Photo, Post } from "../Types";
@@ -20,7 +20,7 @@ const Posts = () => {
       });
   return (
     <div>
-        <h1 className='font-bold'>Posts List</h1>
+        <h1 className='font-extrabold mx-16 mt-6 mb-6 text-2xl'>Posts List</h1>
         {dataPosts && dataPhotos ? (
         <>
           <First dataPosts={dataPosts} dataPhotos={dataPhotos} />
