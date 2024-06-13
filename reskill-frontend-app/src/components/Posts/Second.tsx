@@ -16,11 +16,17 @@ const Second: React.FC<SecondProps> = ({ dataPosts, dataPhotos }) => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex pb-20  mx-8">
       {dataPhotos.slice(1, 3).map((photo, index) => (
         <div key={index} className="flex-1">
           <button onClick={() => handleClick(index + 2)}>
-            <img src={photo.url} alt={photo.title} className="w-full h-full object-cover" />
+            <div className="flex justify-center">
+              <img
+                src={photo.url}
+                alt={photo.title}
+                className="w-full h-96 object-cover mx-8"
+              />
+            </div>
             <p>{dataPosts[index + 1].body}</p>
           </button>
         </div>
