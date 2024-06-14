@@ -12,14 +12,15 @@ const Second: React.FC<SecondProps> = ({ dataPosts, dataPhotos }) => {
   const navigate = useNavigate();
 
   const handleClick = (index: number) => {
-    navigate(`/posts/${index}`);
+    navigate(`/posts/${index+2}`);
+    console.log(index)
   };
 
   return (
-    <div className="flex pb-20  mx-8">
+    <div className="flex pb-10  mx-8">
       {dataPhotos.slice(1, 3).map((photo, index) => (
         <div key={index} className="flex-1">
-          <button onClick={() => handleClick(index + 2)}>
+          <button onClick={() => handleClick(index)}>
             <div className="flex justify-center">
               <img
                 src={photo.url}
