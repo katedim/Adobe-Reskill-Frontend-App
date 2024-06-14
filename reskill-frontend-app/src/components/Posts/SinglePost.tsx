@@ -21,7 +21,7 @@ const SinglePost = () => {
 
   return (
     <div className="container mx-auto  grid grid-cols-2 divide-x flex-wrap items-center mt-6">
- <div>
+      <div>
         <h1 className="text-2xl font-bold mb-4 mx-16">Single Post</h1>
         {post ? (
           <div className="mx-16">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import First from './First';
 import Second from './Second';
+import Third from './Third';
 import { Photo, Post } from "../Types";
 
 const Posts = () => {
@@ -25,6 +26,7 @@ const Posts = () => {
         <>
           <First dataPosts={dataPosts} dataPhotos={dataPhotos} />
           <Second dataPosts={dataPosts} dataPhotos={dataPhotos} />
+          <Third dataPosts={dataPosts} dataPhotos={dataPhotos} />
         </>
       ) : (
         "Loading data..."
